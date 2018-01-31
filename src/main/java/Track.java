@@ -1,7 +1,9 @@
 
 public class Track extends Car {
-    public Track(String name, int size, int govNumber) {
+    int kills;
+    public Track(String name, int size, int govNumber, int kills) {
         super(name, size, govNumber);
+        this.kills = kills;
     }
     public String getInfo(){
         String trackInfo = super.getInfo();

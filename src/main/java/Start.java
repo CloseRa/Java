@@ -1,14 +1,13 @@
-
-import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class Start {
     public static void main(String[] args) {
         ParkingArea parkingArea = new ParkingArea();
 
-        Car sportCar = new SportCar("Audi v8", 3, 777);
-        Car track = new Track("Mercedes IO", 5, 896);
-        Car bus = new Bus("Toyota", 7, 903);
+        Car sportCar = new SportCar("Audi v8", 3, 777, 2);
+        Car track = new Track("Mercedes IO", 5, 896, 99);
+        Car bus = new Bus("Toyota", 7, 903, 40);
 
         Driver driver1 = new Driver("Pablo", 762312);
         Driver driver2 = new Driver("John", 893021);
@@ -17,5 +16,9 @@ public class Start {
         parkingArea.addCar(driver1, track);
         parkingArea.addCar(driver2, sportCar);
         parkingArea.addCar(driver3, bus);
+
+        parkingArea.setMap();
+        parkingArea.delCar();
+
     }
 }
