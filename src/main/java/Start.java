@@ -5,6 +5,7 @@ import java.util.Map;
 public class Start {
     public static void main(String[] args) {
         ParkingArea parkingArea = new ParkingArea();
+
         Car sportCar = new SportCar("Audi v8", 3, 777);
         Car track = new Track("Mercedes IO", 5, 896);
         Car bus = new Bus("Toyota", 7, 903);
