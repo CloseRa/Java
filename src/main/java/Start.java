@@ -1,5 +1,3 @@
-import java.util.Map;
-import java.util.Set;
 
 public class Start {
     public static void main(String[] args) {
@@ -17,8 +15,6 @@ public class Start {
         parkingArea.addCar(driver2, sportCar);
         parkingArea.addCar(driver3, bus);
 
-        parkingArea.setMap();
-        parkingArea.delCar();
-
+        parkingArea.removeCar(driver1, track);
     }
 }
