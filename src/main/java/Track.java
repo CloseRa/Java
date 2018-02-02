@@ -5,8 +5,8 @@ public class Track extends Car {
         super(name, size, govNumber);
         this.kills = kills;
     }
-    public String getInfo(){
-        String trackInfo = super.getInfo();
-        return trackInfo;
+    @Override
+    public void getInfo() {
+        System.out.println("Это грузовик");
     }
 }

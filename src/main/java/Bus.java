@@ -7,8 +7,9 @@ public class Bus extends Car {
         this.passSeat = passSeat;
     }
 
-    public String getInfo(){
-        String BusInfo = super.getInfo();
-        return BusInfo;
+
+    @Override
+    public void getInfo() {
+        System.out.println("Это автобус");
     }
 }

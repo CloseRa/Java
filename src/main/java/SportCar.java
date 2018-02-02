@@ -5,8 +5,9 @@ public class SportCar extends Car {
         super(name, size, govNumber);
         this.cheeks = cheeks;
     }
-    public String getInfo(){
-        String sportCarInfo = super.getInfo();
-        return sportCarInfo;
+
+    @Override
+    public void getInfo() {
+        System.out.println("Это спорткар");
     }
 }

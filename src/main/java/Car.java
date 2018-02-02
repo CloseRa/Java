@@ -1,5 +1,5 @@
 
-public class Car {
+public abstract class Car {
 
     private String name;
     private int size;
@@ -11,7 +11,5 @@ public class Car {
         this.govNumber = govNumber;
     }
 
-    public String getInfo(){
-        return ("Название авто - "+ name +"Размер авто - "+ size +" м."  + "Номер"+ govNumber);
-    }
+    public abstract void getInfo();
 }
